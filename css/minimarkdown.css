@@ -1,0 +1,68 @@
+.cf {
+	zoom: 1;
+}
+
+.cf:before, .cf:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+.cf:after {
+	clear: both;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body, .wrapper, .section {
+	height: 100%;
+}
+
+body {
+	font-family: 'ff-meta-serif-web-pro', 'Georgia', serif;
+	font-size: 24px;
+	line-height: 32px;
+	color: #222;
+}
+
+h1, ul, p {
+	margin-bottom: 32px;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+.wrapper {
+	overflow: auto;
+}
+
+.section {
+	overflow: auto;
+	float: left;
+	width: 50%;
+	padding: 1em;
+}
+
+.section:focus {
+	outline: none;
+}
+
+.input {
+	font: inherit;
+	border: none;
+	background-color: #ddd;
+}
+
+.virgin {
+	color: #888;
+}
